@@ -74,12 +74,12 @@
 			<div class="detail-area">
 				<div class="dz-media-card style-2">
 					<div class="dz-media">
-						<img src="../assets/images/liked/pic2.png" alt="">
+						<img src="../assets/images/liked/pic2.png" alt="" data-profile-photo>
 					</div>
 					<div class="dz-content">
 						<div class="left-content">
-							<h4 class="title">Amina, 26 <span class="ch-verified"><i class="icon feather icon-check-circle"></i>Verified</span></h4>
-							<p class="mb-0"><i class="icon feather icon-map-pin"></i> 5 km away</p>
+							<h4 class="title"><span data-profile-name>Amina, 26</span> <span class="ch-verified"><i class="icon feather icon-check-circle"></i>Verified</span></h4>
+							<p class="mb-0" data-profile-location><i class="icon feather icon-map-pin"></i> 5 km away</p>
 						</div>
 						<a href="javascript:void(0);" class="dz-icon"><i class="flaticon flaticon-star-1"></i></a>
 					</div>
@@ -130,7 +130,23 @@
 							</li>
 						</ul>
 					</div>
-					<div class="languages mb-3">
+					<div class="card style-3 mb-3">
+                        <div class="card-body">
+                            <h6 class="title mb-2">Connection Intent</h6>
+                            <p class="mb-0" data-profile-intent>Open to meaningful new connections</p>
+                        </div>
+                    </div>
+                    <div class="card style-3 mb-3">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-2">
+                                <h6 class="title mb-0">Private Photos</h6>
+                                <i class="icon feather icon-lock ms-auto"></i>
+                            </div>
+                            <p class="mb-3">Private photos are never revealed automatically. After a connection is unlocked, the member can choose whether to share access with you.</p>
+                            <button type="button" class="btn btn-light w-100 rounded-xl" data-private-photos disabled>Unlock the connection first</button>
+                        </div>
+                    </div>
+                    <div class="languages mb-3">
 						<h6 class="title">Languages</h6>
 						<ul class="dz-tag-list">
 							
@@ -152,7 +168,7 @@
 	</div>
 	<!-- Page Content End -->
 	<!-- Menubar -->
-	<div class="footer fixed bg-white"><div class="container p-2"><div class="ch-inline-actions"><a href="credits.html" data-unlock-conversation class="btn btn-gradient btn-shadow rounded-xl">Unlock Conversation · 1 Credit</a><a href="report-block.html" class="btn btn-outline-primary rounded-xl">Report / Block</a></div></div></div>
+	<div class="footer fixed bg-white"><div class="container p-2"><div class="ch-inline-actions"><a href="#" data-unlock-conversation data-profile-id="amina" class="btn btn-gradient btn-shadow rounded-xl">Unlock Conversation · 1 Credit</a><a href="report-block.html" class="btn btn-outline-primary rounded-xl">Report / Block</a></div></div></div>
 	<!-- Menubar -->
 </div>  
 <!--**********************************
