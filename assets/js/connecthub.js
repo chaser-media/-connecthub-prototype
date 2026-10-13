@@ -77,6 +77,7 @@
       }
     }
     if(qs().get('locked')) setTimeout(()=>alert('This conversation is locked. Use 1 Connection Credit to unlock it.'),150);
+    if(qs().get('credits')==='added') setTimeout(()=>alert('Connection Credits added. You can now unlock this conversation.'),150);
   }
 
   function setupUnlock(){
@@ -180,11 +181,23 @@
     document.querySelectorAll('[data-plan-price]').forEach(el=>el.textContent=p.get('price')||'0');
     document.querySelectorAll('[data-plan-credits]').forEach(el=>el.textContent=p.get('credits')||'0');
 
+    if(location.pathname.endsWith('credits.html') && p.get('profile')){
+      document.querySelectorAll('a[href^="payment.html"]').forEach(link=>{
+        const url=new URL(link.getAttribute('href'),location.href);
+        url.searchParams.set('profile',p.get('profile'));
+        link.setAttribute('href',url.pathname.split('/').pop()+'?'+url.searchParams.toString());
+      });
+      const back=document.querySelector('.back-btn');
+      if(back) back.href='profile-detail.html?profile='+encodeURIComponent(p.get('profile'));
+    }
+
     document.querySelectorAll('[data-demo-payment]').forEach(btn=>btn.addEventListener('click',()=>{
       const add=Number(p.get('credits')||btn.dataset.credits||0);
       setCredits(getCredits()+add);
       const profile=p.get('profile');
-      location.href='credits.html?success=1'+(profile?'&profile='+encodeURIComponent(profile):'');
+      location.href=profile
+        ? 'profile-detail.html?profile='+encodeURIComponent(profile)+'&credits=added'
+        : 'credits.html?success=1';
     }));
 
     renderProfile();
