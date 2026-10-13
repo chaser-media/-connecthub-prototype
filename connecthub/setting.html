@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<!-- Title -->
+	<title>ConnectHub — Meet. Connect. Discover.</title>
+
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, minimal-ui, viewport-fit=cover">
+	<meta name="theme-color" content="#FF50A2">
+	<meta name="author" content="DexignZone">
+	<meta name="robots" content="index, follow"> 
+	<meta name="keywords" content="Tanzania, adults, social discovery, verified profiles, connections, chat, progressive web app, PWA, ConnectHub">
+	<meta name="description" content="ConnectHub — Meet. Connect. Discover. A mobile-first PWA prototype for verified adult connections in Tanzania.">
+	<meta property="og:title" content="ConnectHub — Meet. Connect. Discover.">
+	<meta property="og:description" content="ConnectHub — Meet. Connect. Discover. A mobile-first PWA prototype for verified adult connections in Tanzania.">
+	<meta property="og:image" content="https://datingkit.dexignzone.com/xhtml/social-image.png">
+	<meta name="format-detection" content="telephone=no">
+
+	<!-- Favicons Icon -->
+	<link rel="shortcut icon" type="image/x-icon" href="../assets/images/favicon.png">
+	
+    
+    <!-- Global CSS -->
+	<link href="../assets/vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="../assets/vendor/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.css">
+	<link rel="stylesheet" type="text/css" href="../assets/vendor/nouislider/nouislider.min.css">
+	<link rel="stylesheet" href="../assets/vendor/swiper/swiper-bundle.min.css">
+    
+	<!-- Stylesheets -->
+    <link rel="stylesheet" class="main-css" type="text/css" href="../assets/css/style.css">
+	
+    <!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,500;6..12,600;6..12,700;6..12,800;6..12,900;6..12,1000&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+	<link rel="manifest" href="../manifest.json">
+	<link rel="stylesheet" href="../assets/css/connecthub.css">
+</head>   
+<body>
+<div class="page-wrapper">
+    
+	<!-- Preloader -->
+	<div id="preloader">
+		<div class="loader">
+			<div class="load-circle"><div></div><div></div></div>
+		</div>
+	</div>
+    <!-- Preloader end-->
+	
+	<!-- Header -->
+		<header class="header header-fixed bg-white">
+			<div class="container">
+				<div class="header-content">
+					<div class="left-content me-3">
+						<a href="javascript:void(0);" class="back-btn">
+							<i class="icon feather icon-chevron-left"></i>
+						</a>
+						<h6 class="title">Settings</h6>
+					</div>
+					<div class="mid-content">
+					</div>
+					<div class="right-content">
+					</div>
+				</div>
+			</div>
+		</header>
+	<!-- Header -->
+	
+	<!-- Page Content Start -->
+	<div class="page-content space-top">
+		<div class="container"> 
+			<h6 class="title">Account Setting</h6>
+			<div class="card style-3">
+				<div class="card-header">
+					<h6 class="title mb-0 font-14 font-w500">Phone Number</h6>
+				</div>
+				<div class="card-body">
+					<a href="javascript:void(0);" class="setting-input" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom1" aria-controls="offcanvasBottom">
+						<i class="icon dz-flex-box feather icon-phone-call"></i>
+						<span>+255 7XX XXX XXX</span>
+					</a>
+				</div>
+			</div>
+			<div class="card style-3">
+				<div class="card-header">
+					<h6 class="title mb-0 font-14 font-w500">Email Address</h6>
+				</div>
+				<div class="card-body">
+					<a href="javascript:void(0);" class="setting-input" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom2" aria-controls="offcanvasBottom">
+						<i class="icon dz-flex-box feather icon-mail"></i>
+						<span>demo@connecthub.co.tz</span>
+					</a>
+				</div>
+			</div>
+			<h6 class="title">Discovery Setting</h6>
+			<div class="card style-3">
+				<div class="card-header">
+					<h6 class="title mb-0 font-14 font-w500">Location</h6>
+				</div>
+				<div class="card-body">
+					<a href="javascript:void(0);" class="setting-input" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom3" aria-controls="offcanvasBottom">
+						<i class="icon dz-flex-box feather icon-map-pin"></i>
+						<span>Dar es Salaam, Tanzania</span>
+					</a>
+				</div>
+			</div>
+			<h6 class="title">Other</h6>
+			<div class="card style-3">
+				<div class="card-header">
+					<h6 class="title mb-0 font-14 font-w500">Maximum Distance</h6>
+					<div class="title font-w600 font-16">
+						<span class="example-val title slider-margin-value-min"></span>
+						<span class="example-val title slider-margin-value-max"></span>
+					</div>
+				</div>
+				<div class="card-body py-4">
+					<div class="range-slider style-1 w-100">
+						<div id="slider-tooltips3"></div>
+					</div>
+				</div>
+			</div>
+			<div class="card style-3">
+				<div class="card-header">
+					<h6 class="title mb-0 font-14 font-w500">Show Me</h6>
+				</div>
+				<div class="card-body">
+					<a href="javascript:void(0);" class="setting-input" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom4" aria-controls="offcanvasBottom">
+						<span>Women</span>
+						<i class="icon feather dz-flex-box icon-chevron-right ms-auto me-0"></i>
+					</a>
+				</div>
+			</div>
+			<div class="card style-3 mb-0">
+				<div class="card-header">
+					<h6 class="title mb-0 font-14 font-w500">Age Range</h6>
+					<div class="title font-w600 font-16">
+						<span class="example-val title slider-margin-value-min"></span>
+						<span class="example-val title slider-margin-value-max"></span>
+					</div>
+				</div>
+				<div class="card-body py-4">
+					<div class="range-slider style-1 w-100">
+						<div id="slider-tooltips4"></div>
+					</div>
+				</div>
+			</div><div class="card style-3 mt-3"><div class="card-body"><a href="verification.html" class="setting-input"><i class="icon dz-flex-box feather icon-check-circle"></i><span>Verification</span><i class="icon feather dz-flex-box icon-chevron-right ms-auto me-0"></i></a></div></div><div class="card style-3"><div class="card-body"><a href="notifications.html" class="setting-input"><i class="icon dz-flex-box feather icon-bell"></i><span>Notifications</span><i class="icon feather dz-flex-box icon-chevron-right ms-auto me-0"></i></a></div></div><div class="card style-3"><div class="card-body"><a href="report-block.html" class="setting-input"><i class="icon dz-flex-box feather icon-shield"></i><span>Safety, Report & Block</span><i class="icon feather dz-flex-box icon-chevron-right ms-auto me-0"></i></a></div></div><div class="card style-3"><div class="card-body"><a href="admin.html" class="setting-input"><i class="icon dz-flex-box feather icon-grid"></i><span>Admin Dashboard · Demo</span><i class="icon feather dz-flex-box icon-chevron-right ms-auto me-0"></i></a></div></div>
+		</div> 
+	</div>
+	<!-- Page Content End -->
+	
+	<!-- Phone Number OffCanvas -->
+    <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom1">
+		<button type="button" class="btn-close drage-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+		<div class="offcanvas-header share-style m-0 pb-0">
+			<h6 class="title">Phone Number</h6>
+		</div>
+        <div class="offcanvas-body overflow-visible">
+			<form>
+				<div class="input-group dz-select">
+					<div class="input-group-text"> 
+						<div>
+							<select class="form-control custom-image-select image-select">
+								<option data-thumbnail="../assets/images/flags/australia.png">+61</option>
+								<option data-thumbnail="../assets/images/flags/india.png">+91</option>
+								<option data-thumbnail="../assets/images/flags/uae.png">+971</option>
+								<option data-thumbnail="../assets/images/flags/us.png">+1</option>
+							</select>
+						</div>
+					</div>
+					<input type="number" class="form-control" value="1234567890">
+				</div>
+				<a href="javascript:void(0);" class="btn btn-gradient w-100 dz-flex-box btn-shadow rounded-xl" data-bs-dismiss="offcanvas" aria-label="Close">Save</a>
+			</form>		
+        </div>
+    </div>
+	<!-- Phone Number OffCanvas -->
+	
+	<!--  Email OffCanvas -->
+    <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom2">
+		<button type="button" class="btn-close drage-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+		<div class="offcanvas-header share-style m-0 pb-0">
+			<h6 class="title">Email Address</h6>
+		</div>
+        <div class="offcanvas-body">
+			<form>
+				<div class="input-group input-group-icon">
+					<div class="input-group-text">
+						<div class="input-icon">
+							<i class="fa-solid fa-envelope"></i>
+						</div>
+					</div>
+					<input type="email" class="form-control" value="yourname@gmail">
+				</div>
+				<a href="javascript:void(0);" class="btn btn-gradient w-100 dz-flex-box btn-shadow rounded-xl" data-bs-dismiss="offcanvas" aria-label="Close">Save</a>
+			</form>
+        </div>
+    </div>
+	<!--  Email OffCanvas -->
+	
+	<!--  Location OffCanvas -->
+    <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom3">
+		<button type="button" class="btn-close drage-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+		<div class="offcanvas-header share-style m-0 pb-0">
+			<h6 class="title">Email Address</h6>
+		</div>
+        <div class="offcanvas-body">
+			<form>
+				<div class="input-group input-group-icon">
+					<div class="input-group-text">
+						<div class="input-icon">
+							<i class="icon feather icon-map-pin"></i>
+						</div>
+					</div>
+					<input type="email" class="form-control" value="Dar es Salaam, Tanzania">
+				</div>
+				<a href="javascript:void(0);" class="btn btn-gradient w-100 dz-flex-box btn-shadow rounded-xl" data-bs-dismiss="offcanvas" aria-label="Close">Save</a>
+			</form>
+        </div>
+    </div>
+	<!--  Location OffCanvas -->
+	
+	<!--  Location OffCanvas -->
+    <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom4">
+		<button type="button" class="btn-close drage-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+		<div class="offcanvas-header share-style m-0 pb-0">
+			<h6 class="title">Show Me</h6>
+		</div>
+        <div class="offcanvas-body">
+			<div class="radio style-2">
+				<label class="radio-label">
+					<input type="radio" checked="checked" name="radio2">
+					<span class="checkmark">						
+						<span class="text">Women</span>
+						<span class="check"></span>							
+					</span>
+				</label>
+				<label class="radio-label">
+					<input type="radio" name="radio2">
+					<span class="checkmark">
+						<span class="text">Men</span>
+						<span class="check"></span>							
+					</span>
+				</label>
+				<label class="radio-label">
+					<input type="radio" name="radio2">
+					<span class="checkmark">
+						<span class="text">Other</span>	
+						<span class="check"></span>							
+					</span>
+				</label>
+			</div>
+        </div>
+    </div>
+	<!--  Location OffCanvas -->
+</div>  
+<!--**********************************
+    Scripts
+***********************************-->
+<script src="../assets/js/jquery.js"></script>
+<script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+<script src="../assets/vendor/wnumb/wNumb.js"></script><!-- WNUMB -->
+<script src="../assets/vendor/nouislider/nouislider.min.js"></script><!-- NOUSLIDER MIN JS-->
+<script src="../assets/js/noui-slider.init.js"></script><!-- NOUSLIDER MIN JS-->
+<script src="../assets/vendor/swiper/swiper-bundle.min.js"></script><!-- Swiper -->
+<script src="../assets/js/dz.carousel.js"></script><!-- Swiper -->
+<script src="../assets/js/settings.js"></script>
+<script src="../assets/js/custom.js"></script>
+<script src="../assets/js/connecthub.js"></script>
+</body>
+</html>
