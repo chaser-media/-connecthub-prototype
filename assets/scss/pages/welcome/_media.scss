@@ -1,0 +1,325 @@
+//Live Story =====
+.comment-list{
+	width: 70%;
+	margin-bottom: 20px;
+	li{		
+		margin-bottom: 10px;
+		display: flex;
+		align-items: center;
+		padding: 5px 0;
+		border-radius: 50px;
+		
+		.text{
+			color: rgba(255, 255, 255, 0.79);
+		}
+	}
+}
+
+//Reel Area =====
+.title-content{
+	position: fixed;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 1024px;
+	padding: 15px;
+	z-index: 9;
+	line-height: 1;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	.back-btn{
+		font-size: 24px;
+		color: rgba(255, 255, 255, 0.48);
+	}
+	&::after{
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100px;
+		background: linear-gradient(180deg, rgba(0, 0, 0, 0.30), transparent);
+		z-index: -1;
+	}
+	@include respond("tab-port"){
+		left: 0;
+		transform: unset;
+		width: 100%;
+	}
+}
+.media-swiper{
+	height: 100%;
+	position: absolute;
+	width:1024px;
+	overflow: hidden;
+    @include respond("tab-port"){
+		width: 100%;
+	}
+}
+
+.reel-area{
+	width: 100%;
+	margin: 0 auto;
+	height: 100%;
+	.inner-content{
+		display: flex;
+		flex-direction: column;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+	}
+	video{
+		min-height: 100vh;
+		width: 100%;
+		object-fit: cover;
+	}
+}
+.reel-section{
+	margin-top: auto;
+	display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 15px 15px 70px;
+	width: 100%;
+	.user-item{
+		display: flex;
+		align-items: center;
+		flex: 1;
+	}
+}
+.reel-actions{
+	display: flex;
+	align-items: center;
+    flex-direction: column;
+	.r-btn{
+		color:#fff;
+		text-align: center;
+		font-size: 25px;
+		padding-bottom: 12px;
+		svg{
+			width: 24px;
+			height: 24px;
+			path{
+				fill: #fff;
+			}
+		}
+		span{
+			display: block;
+			font-size: 14px;
+		}
+	}
+}
+
+.canvas-height{
+	height: 300px;
+	overflow: scroll;
+	scrollbar-width: none;
+}
+
+.follow-btn{
+	border: 1px solid var(--primary);
+	color: #fff;
+	border-radius: var(--border-radius-sm);
+	text-align: center;
+	padding: 8px 10px;
+	font-size: 12px;
+	letter-spacing: 0.5px;
+	font-weight: 600;
+	&.follow{
+		background-color: var(--primary);
+		border-color: var(--primary);
+		color: #fff;
+	}
+}
+
+//Reel Features List ===
+.features-list{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+	li{
+		text-align: center;
+		.dz-icon{
+			width: 60px;
+			height: 60px;
+			border: 1px solid var(--primary);
+			border-radius: 50%;
+			margin: 0 auto 10px;
+			background-color: var(--rgba-primary-1);
+			i{
+				font-size: 24px;
+				color: var(--primary);
+			}
+		}
+		span{
+			font-size: 14px;
+			font-weight: 600;
+			color: var(--title);
+		}
+	}
+}
+
+.reel-canvas{
+	width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.share-list{
+	li{
+		padding-bottom: 15px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		.left-content{
+			position: relative;
+			padding-left: 55px;
+	
+			img{
+				width: 40px;
+				height: 40px;
+				border-radius: 50%;
+				position: absolute;
+				left: 0;
+				top: 0;
+			}
+		}
+		.name{
+			font-weight: 500;
+			margin-bottom: 0;
+		}
+		.username{
+			font-size: 12px;
+		}
+	}
+}
+
+
+//LIKE-BUTTON===
+.like-button{
+	position: relative;
+	font-size: 20px;
+	--xw:10px;
+	&:focus {
+		outline: 0;
+	}
+	&:before, 
+	&:after{
+		position: absolute;
+		content: '';
+		display: block;
+		width: 200%;
+		height: 100%;
+		left: -50%;
+		z-index: -1000;
+		transition: all ease-in-out 0.5s;
+		background-repeat: no-repeat;
+	}
+  
+	&:before{
+		display: none;
+		top: -35%;
+		background-image:  
+		radial-gradient(circle, $pink 20%, transparent 20%),
+		radial-gradient(circle,  transparent 20%, $pink 20%, transparent 30%),
+		radial-gradient(circle, $pink 20%, transparent 20%), 
+		radial-gradient(circle, $pink 20%, transparent 20%),
+		radial-gradient(circle,  transparent 10%, $pink 15%, transparent 20%),
+		radial-gradient(circle, $pink 20%, transparent 20%),
+		radial-gradient(circle, $pink 20%, transparent 20%),
+		radial-gradient(circle, $pink 20%, transparent 20%),
+		radial-gradient(circle, $pink 20%, transparent 20%);
+		background-size:
+		calc(10% + var(--xw)) 
+		calc(10% + var(--xw)), 
+		calc(20% + var(--xw)) 
+		calc(20% + var(--xw)), 
+		calc(15% + var(--xw)) 
+		calc(15% + var(--xw)), 
+		calc(20% + var(--xw)) 
+		calc(20% + var(--xw)), 
+		calc(18% + var(--xw)) 
+		calc(18% + var(--xw)), 
+		calc(10% + var(--xw)) 
+		calc(10% + var(--xw)), 
+		calc(15% + var(--xw)) 
+		calc(15% + var(--xw)), 
+		calc(10% + var(--xw)) 
+		calc(10% + var(--xw)), 
+		calc(18% + var(--xw)) 
+		calc(18% + var(--xw));
+	}
+  
+	&:after{
+		display: none;
+		bottom: -25%;
+		background-image:  
+		radial-gradient(circle, $pink 20%, transparent 20%), 
+		radial-gradient(circle, $pink 20%, transparent 20%),
+		radial-gradient(circle,  transparent 10%, $pink 15%, transparent 20%),
+		radial-gradient(circle, $pink 20%, transparent 20%),
+		radial-gradient(circle, $pink 20%, transparent 20%),
+		radial-gradient(circle, $pink 20%, transparent 20%),
+		radial-gradient(circle, $pink 20%, transparent 20%);
+		background-size: 
+		calc(15% + var(--xw)) 
+		calc(15% + var(--xw)), 
+		calc(20% + var(--xw)) 
+		calc(20% + var(--xw)), 
+		calc(18% + var(--xw)) 
+		calc(18% + var(--xw)), 
+		calc(20% + var(--xw)) 
+		calc(20% + var(--xw)), 
+		calc(15% + var(--xw)) 
+		calc(15% + var(--xw)), 
+		calc(10% + var(--xw)) 
+		calc(10% + var(--xw)), 
+		calc(20% + var(--xw)) 
+		calc(20% + var(--xw));
+	}
+ 
+	&:active{
+		transform: scale(0.9);
+	}
+  
+	&.active{
+		&:before{
+			display: block;
+			animation: likeButton ease-in-out 0.75s forwards;
+		}
+		&:after{
+			display: block;
+			animation: likeButtonBottom ease-in-out 0.75s forwards;
+		}
+		.fa-heart:before{
+			font-weight: 700;
+			color:$pink;
+		}
+	}
+}
+@keyframes likeButton {
+	0%{
+		background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%, 40% 90%, 55% 90%, 70% 90%;
+	}
+    50% {
+		background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%, 50% 50%, 65% 20%, 90% 30%;
+	}
+	100% {
+		background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%, 50% 40%, 65% 10%, 90% 20%;
+		background-size: 0% 0%, 0% 0%,  0% 0%,  0% 0%,  0% 0%,  0% 0%;
+	}
+}
+@keyframes likeButtonBottom {
+	0%{
+		background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%, 70% -10%, 70% 0%;
+	}	
+	50% {
+		background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%, 105% 0%;}
+	100% {
+		background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%, 110% 10%;
+		background-size: 0% 0%, 0% 0%,  0% 0%,  0% 0%,  0% 0%,  0% 0%;
+	}
+}

@@ -1,0 +1,116 @@
+.table > :not(:first-child) {
+    border-top: 0px solid currentColor; 
+}
+.table-striped > tbody > tr:nth-of-type(odd) > * {
+    --bs-table-accent-bg: var(--rgba-primary-1);
+}
+.table{
+    th{
+        font-size: 14px;
+        font-weight: 600;
+    }
+}
+
+.pricing-table{
+	background-color: var(--bg-white);
+	border-radius: var(--border-radius-md);
+	overflow: hidden;
+	--btn-shadow: 0px 10px 30px 0px rgba(255, 63, 152, 0.20);
+	.pricing-head{
+		padding: 20px 15px;
+		background-size: cover;
+		background-position: center;
+		.price,
+		.title{
+			color: #fff;
+		}
+	}
+	.pricing-body{
+		padding: 20px 15px 0;
+	}
+	.table-list{
+		.list{
+			display: flex;
+			align-items: center;
+			padding: 8px 0;
+			border-bottom: 1px dashed var(--border-color);
+			font-family:var(--font-family-title);
+			> i{
+				font-size: 16px;
+				margin-right: 10px;
+				color: #51D961;
+			}
+		}
+	}
+	.table-bottom-content{
+		padding: 24px;
+	}
+}
+
+.subscription-box{
+	text-align: center;
+	.icon-bx{
+		width: 60px;
+		height: 60px;
+		border-radius: 50%;
+		font-size: 32px;
+		background-color: var(--rgba-primary-1);
+		color: var(--primary);
+	}
+}
+
+
+.short-tag{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 26px;
+	.btn-check:checked + .tag-btn {
+		border-color: var(--primary);
+		transform: scale(1.1);
+		z-index: 9;
+		.mid-content{
+			.tag-btn{	
+				border-left-color: var(--primary);
+				border-right-color: var(--primary);
+			}	
+		}
+		&:after{
+			display: block;
+		}
+	}
+	.tag-btn{	
+		border: 2px solid var(--border-color);
+		border-radius: 0;
+		padding: 12px;
+		background: var(--bg-white);
+		display: inline-block;
+		position: relative;
+		transform: scale(1);
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		.title{
+			font-size: 28px;
+			color: var(--title);
+			font-weight: 600;
+		}
+		.pack{
+			color: var(--title);
+			font-weight: 700;
+		}
+		.small-text{
+			font-size: 14px;
+			font-weight: 400;
+			color: var(--body-color);
+		}
+	}
+	.mid-content{
+		.tag-btn{	
+			border-left-color: transparent;
+			border-right-color: transparent;
+		}	
+	}
+}  

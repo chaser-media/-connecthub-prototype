@@ -1,0 +1,102 @@
+// Default Switch
+.form-switch{
+    .form-check-input{
+        width: 2.25rem;
+        height: 1.125rem;
+        margin-right: 14px;
+        &.form-check-primary{
+            &:checked {
+                background-color: var(--primary);    
+                border-color: var(--primary);    
+            }
+        }
+        &.form-check-warning{
+            &:checked {
+                background-color: $warning;    
+                border-color: $warning;    
+            }
+        }
+        &.form-check-success{
+            &:checked {
+                background-color: $success;    
+                border-color: $success;    
+            }
+        }
+        &.form-check-danger{
+            &:checked {
+                background-color: $danger;    
+                border-color: $danger;    
+            }
+        }
+        &.form-check-info{
+            &:checked {
+                background-color: $info;    
+                border-color: $info;    
+            }
+        }
+        &.form-check-dark{
+            &:checked {
+                background-color: $dark;    
+                border-color: $dark;    
+            }
+        }
+    }        
+}
+
+
+
+// Custom Switch
+.custom-switch{
+    position: relative;
+    line-height: 1;
+    input{
+        display: none;
+    }
+    label{
+        cursor: pointer;
+        &:before{
+            content: "";
+            display: block !important;
+            background-color: var(--bg-white);
+            pointer-events: all;
+            width: 40px !important;
+            height: 22px !important;
+            transition: all 250ms ease;
+			border-radius: 18px;
+			box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.10);
+        }
+        &:after{
+            content: "";
+            display: block !important;
+            z-index: 6;
+            position: absolute;
+			top: 2px;
+			left: 2px;
+            width: 18px !important;
+            height: 18px !important;
+            transition: all 250ms ease;
+            border-radius: 50px !important;
+            background-color:#E3E3E3;
+            transition: all 250ms ease;
+        }
+    }    
+    .switch-input{
+        &:checked~.custom-switch-label{
+            &:after{
+				transform:translateX(18px)!important;
+                -webkit-transform:translateX(18px)!important;
+            }
+            &:before{
+                background-color:var(--primary)!important
+            }
+        }
+    }
+}
+
+.mode{
+    display: flex;
+    align-items: center;
+    .custom-switch{
+        margin-left: auto;
+    }
+}

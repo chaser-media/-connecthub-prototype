@@ -1,0 +1,105 @@
+/* 	=========================
+	Template Name 	 : Dating Kit
+	Author			 : DexignZone
+	Version			 : 1.0
+	Author Portfolio : https://themeforest.net/user/dexignzone/portfolio
+	=========================
+	
+	=========================
+	[Table of Contents]
+	=========================
+	==============
+	  SCSS Start
+	==============
+	1. Abstracts
+        1.1 _mixin
+        1.2 _variable
+        1.3 _abstracts
+
+    2. Bootstrap 
+        2.1 Here goes all official bootstrap scss files
+
+    3. Global/Base
+        3.1 _fonts
+        3.2 _reset
+        3.3 _shortcode 
+
+    4. Layout
+        4.1 footer
+        4.2 header
+			4.2.1 _header-sidebar
+		4.3 theme
+
+    5. Components
+        5.1 ui
+			5.1.1	_ui-accordion 
+			5.1.2	_ui-action-sheet 
+			5.1.4	_ui-alert 
+			5.1.5	_ui-avatar 
+			5.1.6	_ui-badge 
+			5.1.7	_ui-breadcrumb 
+			5.1.8	_ui-button 
+			5.1.9	_ui-card 
+			5.1.10 	_ui-chip 
+			5.1.11 	_ui-divider 
+			5.1.12 	_ui-dropdown 
+			5.1.13 	_ui-form 
+			5.1.14 	_ui-lightgallery 
+			5.1.15 	_ui-list-group 
+			5.1.16 	_ui-media 
+			5.1.17 	_ui-modal 
+			5.1.18 	_ui-nouislider 
+			5.1.19 	_ui-pagination 
+			5.1.20 	_ui-popover 
+			5.1.21 	_ui-progressbar 
+			5.1.22 	_ui-radio 
+			5.1.23 	_ui-scrollspy 
+			5.1.24 	_ui-spinner 
+			5.1.25 	_ui-stepper 
+			5.1.26 	_ui-swiper 
+			5.1.27 	_ui-switch 
+			5.1.28 	_ui-tab 
+			5.1.29 	_ui-table 
+			5.1.30 	_ui-timeline 
+			5.1.31	_ui-toast 
+	
+    6. Pages
+        6.1  _home
+        6.2  _login
+        6.3  _message
+        6.4  _product-details
+        6.5  _profile
+        6.6  _splashcreen
+        6.7 _tinder-swiper
+        6.8 _welcome
+        6.9 welcome
+          6.9.1 _Home
+          6.9.2 _media
+		
+	7. PreLoader 
+	
+	==============
+	  SCSS End
+	==============
+========================= */
+
+/*==== 1. Abstracts ====*/
+@import "./abstracts/abstracts";
+
+/*==== 3. Bootstrap ====*/
+@import "../vendor/bootstrap/scss/bootstrap";
+
+/*==== 4. Global/Base ====*/
+@import "./base/base";
+
+/*==== 5. Layout ====*/
+@import "./layout/layout";
+
+/*==== 6. Components ====*/
+@import "./components/components";
+
+/*==== 7. Pages ====*/
+@import "./pages/pages";
+
+/*==== 8. PreLoader ====*/
+@import "./preloader";

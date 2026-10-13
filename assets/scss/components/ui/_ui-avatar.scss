@@ -1,0 +1,44 @@
+.dz-avatar{
+	display: flex;
+	align-items: center;
+	.avatar-list{
+		margin-right: 10px;
+		margin-bottom: 10px;
+		.media{
+			img{
+				border-radius: var(--border-radius);
+			}
+		}
+	}
+	&.list-stacked{
+		.avatar-list{
+			margin-right: -10px;
+			margin-bottom: 0;
+			.media{
+				img{
+					box-shadow: 0 0 0 2px #fff;
+				}
+			}
+		}
+	}
+	&.list-status{
+		.avatar-list{
+			.media{
+				position: relative;
+				img{
+					box-shadow: 0 0 0 2px #fff;
+				}
+				.list-status{
+					width: 12px;
+					min-width: 12px;
+					height: 12px;
+					border-radius: 50%;
+					position: absolute;
+					bottom: 0;
+					right: 0;
+					border: 2px solid #fff;
+				}
+			}
+		}
+	}
+}

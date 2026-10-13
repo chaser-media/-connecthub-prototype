@@ -1,0 +1,166 @@
+//login ====	
+.account-area{
+	.section-head{
+		padding: 20px;
+		h2{
+			margin-bottom: 5px;	
+		}
+	}
+	.back-btn{
+		width: 48px;
+		min-width: 48px;
+		height: 48px;
+		background-color: var(--rgba-primary-1);
+		border-radius: 50%;
+		text-align: center;
+		color: var(--title);
+		font-size: 28px;
+	}
+	// Country selector ==
+	.country-select{
+		form{
+			.form-control{
+				border-width: 0px 0px 1px 0;
+				border-radius: 0;
+			}
+			.iti--allow-dropdown input{
+				padding-right: 5px;
+				padding-left: 70px;
+				margin-left: 0;
+			}
+		} 
+		.iti{
+			width: 100%;
+			.iti__flag{
+				transform: scale(1.4);
+			}
+			.iti__arrow{
+				margin-left: 20px;
+				border: 0;
+				position: relative;
+				&::after{
+					content: "\e842";
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					color: var(--title);
+					font-weight: 600;
+					font-size: 18px;
+					font-family: 'feather' !important;
+					transform: translate(-50%, -50%);
+				}
+			}
+		}
+	}
+	// Country selector ==
+	&.style-2{
+		.section-head{
+			padding: 15px 0;
+			h2{
+				margin-bottom: 10px;	
+			}
+			p{
+				font-size: 16px;
+				margin-bottom: 0;
+			}
+			.badge{
+				background-color: var(--rgba-primary-1);
+				color: var(--primary);
+				padding: 8px 14px;
+				font-size: 16px;
+				border-radius: var(--border-radius-md);
+				font-weight: 700;
+			}
+		}
+		.back-btn{
+			width: unset;
+			min-width: unset;
+			height: unset;
+			background-color: unset;
+			border-radius: 50%;
+			text-align: left;
+			color: var(--title);
+			font-size: 28px;
+			display: inline-block;
+		}
+		.dz-contact{
+			.input-group{
+				gap: 15px;
+				.input-group-text{
+					font-size: 18px;
+					font-weight: 600;
+					color: var(--title);
+					border-width: 0 0 2px;
+					padding-top: 9px;
+				}
+				.form-control{
+					padding-left: 0;
+					border-width: 0 0 2px;
+					font-size: 18px;
+					font-weight: 600;
+				}
+			}
+		}
+	}
+}
+
+.policy-content{
+	margin-top: 30px;
+	li{
+		margin-bottom: 15px;
+		p{
+			font-size: 16px;
+			margin-bottom: 0;
+			line-height: 1.4;
+		}
+	}
+}
+
+.input-group > .form-control:focus, .input-group > .form-select:focus{
+    z-index: unset;
+}
+.digit-group {
+	display: flex;
+	flex-direction: initial;
+	margin-bottom: 20px;
+	justify-content: center;
+	input {
+		margin: 0 8px;
+		text-align: center;
+		font-size: 18px;
+		color: var(--dark);
+		padding: 0;
+		width: 50px;
+		height: 50px;
+	}
+	&.input-mini{
+		.form-control{
+			border-bottom-width: 2px;
+		}	
+	}
+}
+
+/* DEFULT CSS CLASS */
+.dz-flex-box{
+	display: flex !important;
+	align-items: center !important;
+	justify-content: center!important;
+}
+
+// Country Codde Drop Down ====
+.iti{
+	.iti__country-list{
+		border: 1px solid var(--border-color);
+		border-radius: var(--border-radius-sm);
+		box-shadow: var(--box-shadow);
+	}
+	.iti__divider{
+		border-color: var(--border-color);
+	}
+}
+.iti-mobile .iti--container{
+	top: 28%;
+    left: 15px;
+    bottom: 15px;
+    width: calc(100% - 30px);
+}

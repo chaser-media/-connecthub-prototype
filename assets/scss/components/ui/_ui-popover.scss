@@ -1,0 +1,74 @@
+.popover-area{
+	.bootstrap-popover{
+		.btn{
+			padding: 6px 14px;
+			font-size: 14px;	
+		}	
+	}
+}
+.popover{
+    border: 0.125rem solid var(--primary);
+    min-width: 13.125rem;
+    box-shadow: 0 0 1.875rem 0 rgba(0,0,0,0.1);
+	background-color: var(--bg-white);
+    &-header{
+        background: var(--primary);
+        color: $white;
+        font-weight: 300;
+
+        &::before{
+            border-bottom: 0 !important;
+        }
+    }
+    &-body{
+        font-size: 0.75rem;
+    }
+	@include respond ('phone-land'){
+		z-index:1;
+	}
+}
+
+.bootstrap-popover-wrapper{
+    .bootstrap-popover:not(:last-child){
+        margin-right: 0.5rem;
+    }
+
+    .bootstrap-popover{
+		margin-bottom: .5rem;
+
+        button:hover,button:focus{
+            background: var(--primary);
+            color: $white;
+            box-shadow: none;
+        }
+    }
+}
+
+// .tooltip {
+//     font-size: 0.9375rem;
+// }
+
+
+.bs-popover-top > .popover-arrow::after, .bs-popover-auto[data-popper-placement^="top"] > .popover-arrow::after{
+    bottom: 0rem;
+    border-top-color: var(--primary);
+}
+
+.bs-popover-left > .popover-arrow::after, .bs-popover-auto[data-popper-placement^="left"] > .popover-arrow::after{
+    right: 0rem;
+    border-left-color: var(--primary);
+}
+
+.bs-popover-right > .popover-arrow::after, .bs-popover-auto[data-popper-placement^="right"] > .popover-arrow::after{
+    left: 0rem;
+    border-right-color: var(--primary);
+}
+
+.bs-popover-bottom > .popover-arrow::after, .bs-popover-auto[data-popper-placement^="bottom"] > .popover-arrow::after{
+    top: 0rem;
+    border-bottom-color: var(--primary);
+}
+
+.note-popover{
+    display: none;
+}
