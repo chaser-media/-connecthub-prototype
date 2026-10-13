@@ -1,0 +1,213 @@
+// Color
+$primary   : #FF50A2;
+$secondary : #441D3E !default;
+$success   : #54D969 !default;
+$info      : #4cb1ff !default;
+$warning   : #ffb02c !default;
+$danger    : #ff4a5c !default;
+$light     : #E6E6E6 !default;
+$dark      : #2f2f2f;
+
+// Color skin
+$color1	  : $primary;
+$color2   : #ea3d85;
+$color3   : #8810f7;	
+
+// Body
+$body-bg   	  : #f5f5f5;
+$body-color	  : #697089;
+$d-border	  : #E3E3E3;
+$border		  : #E6E6E6;
+$bg-gradient  : linear-gradient(0deg, #FE3D96 0%, #FFA4CF 100%); //PROFILE BG =====
+$box-shadow   : 0px 2px 8px 0px rgba(99, 99, 99, 0.2); //Box Shadow =====
+$box-shadow2  : 0px 3px 12px rgba(0, 0, 0, 0.10); //Box Shadow =====
+
+$gradient1    : linear-gradient(94deg, #E93E84 14.36%, #F46D8F 42.6%, #FE854E 80.39%);
+$gradient2    : linear-gradient(94deg, #E79E45 22.95%, #EBAF51 42.6%, #DCB554 80.39%);
+$gradient3    : linear-gradient(94deg, #0A0B0E 14.36%, #1F242A 42.6%, #37444E 80.39%);
+
+
+
+// Typography
+$font-family-title 		: 'Poppins', sans-serif;
+$font-family-base		: 'Nunito Sans', sans-serif;
+$font-family-sub-title	: 'Nunito Sans', sans-serif;
+$headings-font-weight	: 600;
+
+// $headings-font-family:        $fm;
+$font-size-base         : 0.875rem !default;
+$font-weight-base       : 500 !default;
+
+$line-height-base    	: 1.6;
+$h1-font-size           : 2.5rem;	//(40px)
+$h2-font-size           : 1.75rem;	//(28px)
+$h3-font-size           : 1.5rem;	//(24px)
+$h4-font-size           : 1.25rem;	//(20px)
+$h5-font-size           : 1.125rem;	//(18px)
+$h6-font-size           : 1rem;		//(16px)
+
+$text-muted  : #AEAED5;
+$text-accent : #69708A;
+$text-light  : #A19FA8;
+$colors      : () !default;
+
+
+$grid-gutter-width   : 30px;
+$dropdown-lik-color  : $body-color;
+$headings-color      : #232954 !default;
+$grid-breakpoints    : (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px, xxl: 1440);
+$container-max-widths: (sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1024px) !default;
+
+$input-btn-focus-width: 0rem !default;
+
+// Other Color
+$orange  : #ff8853;
+$skyblue : #00aeff;
+$maroon  : #9e0168;
+$yellow  : #FFA902;
+$pink    : #ff0081;
+$red     : #ff586e;
+$green   : #84CA93;
+$blue    : #5543d1;
+$purple  : #A183E0;
+$grey    : #E8EFF3;
+
+// Color Opacity
+$primary-light	: rgba($primary,0.1);
+$secondary-light: rgba($secondary,0.1);
+$success-light	: rgba($success,0.1);
+$warning-light	: rgba($warning,0.1);
+$danger-light	: rgba($danger,0.1);
+$info-light		: rgba($info,0.1);
+$dark-light		: rgba($dark,0.1);
+$white-light	: rgba($light,0.1);
+$yellow-light	: rgba($yellow,0.1);
+
+/////////////////////////
+// Primary Light
+/////////////////////////
+$primary-light	: lighten($primary, 18%);
+$secondary-light: lighten($secondary, 70%);
+$success-light	: lighten($success, 35%);
+$warning-light	: lighten($warning, 35%);
+$danger-light	: lighten($danger, 30%);
+$info-light		: lighten($info, 30%);
+$dark-light		: lighten($dark, 60%);
+
+/////////////////////////
+// Opacity 
+/////////////////////////
+$primary-opacity	: rgba($primary, 0.1);
+$secondary-opacity	: rgba($secondary, 0.5);
+$success-opacity	: rgba($success, 0.1);
+$warning-opacity	: rgba($warning, 0.1);
+$danger-opacity		: rgba($danger, 0.15);
+$info-opacity		: rgba($info, 0.1);
+$dark-opacity		: rgba($dark, 0.35);
+
+// border radius
+$radius-md	: 18px !default;
+$radius		: 12px !default;
+$radius-sm	: 8px !default;
+
+
+// RTL Change Value
+$dz-right: r;
+$dz-left: l;
+
+$dz-pos-right: right;
+$dz-pos-left: left;
+$dz-tx: -50%;
+
+
+///////////////////
+// Social Colors
+///////////////////
+
+$facebook	: #305CCD;
+$twitter	: #1da1f2;
+$youtube	: #FF0000;
+$google-plus: #db4439;
+$linkedin	: #007bb6;
+$instagram	: #c32aa3;
+$pinterest	: #bd081c;
+$google		: #4285f4;
+$snapchat	: #fffc00;
+$whatsapp	: #25d366;
+$tumblr		: #35465d;
+$reddit		: #ff4500;
+$spotify	: #1ed760;
+$yahoo		: #430297;
+$dribbble	: #ea4c89;
+$skype		: #00aff0;
+$quora		: #aa2200;
+$riverBed	: #4C585C;
+$vimeo		: #1ab7ea;
+
+$theme-color: (
+	facebook	: $facebook,
+	twitter		: #1da1f2,
+	youtube		: #FF0000,
+	google-plus : #db4439,
+	linkedin	: #007bb6,
+	instagram	: #c32aa3,
+	pinterest	: #bd081c,
+	google		: #4285f4,
+	snapchat	: #fffc00,
+	whatsapp	: #25d366,
+	tumblr		: #35465d,
+	reddit		: #ff4500,
+	spotify		: #1ed760,
+	yahoo		: #430297,
+	dribbble	: #ea4c89,
+	skype		: #00aff0,
+	quora		: #aa2200,
+	riverBed	: #4C585C,
+	vimeo		: #1ab7ea,
+);
+
+:root{
+	--primary			: #{$primary};
+	--primary-light		: #{$primary-light};
+	--bg-gradient		: #{$bg-gradient};	
+	--primary-hover		: #{darken($primary, 10)};
+	--primary-dark		: #{darken($primary, 30)};
+	--secondary			: #{$secondary};
+	--secondary-light	: rgba(47, 47, 47, 0.50);
+	--rgba-primary-1	: #{rgba($primary, 0.1)};
+	--rgba-primary-2	: #{rgba($primary, 0.2)};
+	--rgba-primary-3	: #{rgba($primary, 0.3)};
+	--rgba-primary-4	: #{rgba($primary, 0.4)};
+	--rgba-primary-5	: #{rgba($primary, 0.5)};
+	--rgba-primary-6	: #{rgba($primary, 0.6)};
+	--rgba-primary-7	: #{rgba($primary, 0.7)};
+	--rgba-primary-8	: #{rgba($primary, 0.8)};
+	--rgba-primary-9	: #{rgba($primary, 0.9)};
+	--font-family-title	: #{$font-family-title};
+	--font-family-base	: #{$font-family-base};
+	--box-shadow	    : #{$box-shadow};
+	--box-shadow2	    : #{$box-shadow2};
+	--gradient1	    	: #{$gradient1};
+	--gradient2	    	: #{$gradient2};
+	--gradient3	    	: #{$gradient3};
+	--border-radius-md  : #{$radius-md};
+	--border-radius     : #{$radius};
+	--border-radius-sm	: #{$radius-sm};
+	--border-color		: #{$border};
+	--body-bg			: #{$body-bg};
+	--body-color		: #{$body-color};
+	--dark				: #{$dark};
+	--bg-white			: #FFF;
+	--bg-light			: #F0F0F0;
+	--title				: #{$headings-color};
+	--card-bg			: #fff;
+	--theme-text-color  : #fff;
+	--light				: #{$light};
+	--text-accent		: #{$text-accent};
+	--text-light		: #{$text-light};
+	--btn-gradient		: linear-gradient(0deg, #FE3D96 0%, #FFA4CF 100%);
+	--btn-shadow		: 0px 24px 30px 0px rgba(255, 63, 152, 0.20);
+}

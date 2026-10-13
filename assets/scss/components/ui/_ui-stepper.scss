@@ -1,0 +1,230 @@
+.dz-stepper{
+    width: 125px;
+    small{
+        text-align:center;
+        display: block;
+        color: var(--dark);
+        font-weight: 500;
+        margin-bottom: 5px;
+    }    
+    .bootstrap-touchspin{
+        display: flex;
+        align-items: center;
+        margin-bottom: 0;
+        .input-group-btn{
+            height: 100%;
+            .btn{
+                border-radius: 40px;
+                width: 40px;
+                height: 40px;
+                padding: 0;
+                text-align: center;
+                border: 1px solid var(--border-color);
+                font-size: 1.5rem;
+                color: var(--title);
+                background-color: transparent;
+                &:hover, &:focus ,&:active{
+                    background:#E8EFF3;    
+                    border-color:#E8EFF3;
+                    color: var(--primary);
+                }
+            }   
+            &:not(:first-child){
+                padding: 0;    
+            }
+        }
+        .form-control{
+            padding: 0 10px;
+            height: 100%;
+            font-size: 1.125rem;
+            font-weight: 500;
+            color: var(--dark);
+            background: transparent;
+            border: 0;
+            z-index: 3;
+            text-align: center;
+        }
+    }
+    &.stepper-fill{
+        .bootstrap-touchspin{
+            .input-group-btn{
+                .btn{
+                    background-color: var(--primary);
+                    color: #fff;
+					border-color: var(--primary);
+                }
+            }    
+        }    
+    }
+	&.border-2{
+        .bootstrap-touchspin{
+            overflow: hidden;
+            .btn{
+				border-width: 2px;
+			}
+        }
+    }
+    &.small-stepper{
+        .bootstrap-touchspin{
+			.btn{
+				width: 35px;
+				height: 35px;
+			}			
+        }    
+    }
+    &.large{
+        .bootstrap-touchspin{
+			height: 45px;   
+            .btn{
+				width: 45px;
+				height: 45px;
+			}     
+        }    
+    }
+    &.rounded-stepper{
+        .bootstrap-touchspin{  
+            overflow: hidden;
+			.btn{
+				border-radius: var(--border-radius);
+			}
+        }    
+    }
+    &.danger{
+        .bootstrap-touchspin{
+            border-color: $danger;
+            .input-group-btn{
+                .btn{
+                    color: #fff;
+                    background-color: $danger;
+                }   
+            }
+            .form-control{
+                border-color: $danger;    
+                color: $danger;    
+            }
+        }
+    }
+    &.secondary{
+        .bootstrap-touchspin{
+            border-color: var(--secondary);
+            .input-group-btn{
+                .btn{
+                    color: #fff;
+                    background-color: var(--secondary);
+                }   
+            }
+            .form-control{
+                border-color: var(--secondary);    
+                color: var(--secondary);    
+            }
+        }
+    }
+    &.warning{
+        .bootstrap-touchspin{
+            border-color: $warning;
+            .input-group-btn{
+                .btn{
+                    color: #fff;
+                    background-color: $warning;
+                }   
+            }
+            .form-control{
+                border-color: $warning;    
+                color: $warning;    
+            }
+        }
+    }
+    &.success{
+        .bootstrap-touchspin{
+            border-color: $success;
+            .input-group-btn{
+                .btn{
+                    color: #fff;
+                    background-color: $success;
+                }   
+            }
+            .form-control{
+                border-color: $success;    
+                color: $success;    
+            }
+        }
+    }
+    &.info{
+        .bootstrap-touchspin{
+            border-color: $info;
+            .input-group-btn{
+                .btn{
+                    color: #fff;
+                    background-color: $info;
+                }   
+            }
+            .form-control{
+                border-color: $info;    
+                color: $info;    
+            }
+        }
+    }
+    &.yellow{
+        .bootstrap-touchspin{
+            border-color: #ffcc00;
+            .input-group-btn{
+                .btn{
+                    color: #fff;
+                    background-color: #ffcc00;
+                }   
+            }
+            .form-control{
+                border-color: #ffcc00;    
+                color: #ffcc00;    
+            }
+        }
+    }
+    &.green{
+        .bootstrap-touchspin{
+            border-color: #4cd964;
+            .input-group-btn{
+                .btn{
+                    color: #fff;
+                    background-color: #4cd964;
+                }   
+            }
+            .form-control{
+                border-color: #4cd964;    
+                color: #4cd964;    
+            }
+        }
+    }
+    &.dark{
+        .bootstrap-touchspin{
+            border-color: #000;
+            .input-group-btn{
+                .btn{
+                    color: #fff;
+                    background-color: #000;
+                }   
+            }
+            .form-control{
+                border-color: #000;    
+                color: #000;    
+            }
+        }
+    }
+	&.style-2{
+		width: 85px;
+		.bootstrap-touchspin{
+            .input-group-btn{
+                .btn{
+					width: 30px;
+					height: 30px;
+					font-size: 20px;
+					border: 1px solid var(--border-color);
+					border-radius: var(--border-radius-sm);
+                }				
+            }
+			.form-control{
+				padding: 0 5px;
+				font-size: 14px;
+			}
+        }
+	}	
+}

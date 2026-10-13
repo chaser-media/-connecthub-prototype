@@ -1,0 +1,23 @@
+.dz-lightgallery{
+	.gallery-box{
+		padding-bottom: 10px;
+		display: block;
+		img{
+			width: 100%;
+			height: 200px;
+			object-fit: cover;
+		}
+	}	
+	&.style-2{
+		display: flex;
+		flex-wrap: wrap;
+		.gallery-box{
+			width: 33.33%;
+			padding-bottom: 5px;
+			padding-right: 5px;
+			img{
+				height: 110px;
+			}
+		}	
+	}
+}

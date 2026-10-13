@@ -1,0 +1,16 @@
+{
+  "background_color": "#FF50A2",
+  "theme_color": "#FF50A2",
+  "description": "ConnectHub \u2014 Meet. Connect. Discover. A mobile-first PWA prototype for verified adult connections in Tanzania.",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "assets/images/pwa150x150.png",
+      "sizes": "150x150",
+      "type": "image/png"
+    }
+  ],
+  "name": "ConnectHub",
+  "short_name": "ConnectHub",
+  "start_url": "connecthub/onboarding.html"
+}

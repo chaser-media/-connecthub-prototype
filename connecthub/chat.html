@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<!-- Title -->
+	<title>ConnectHub — Meet. Connect. Discover.</title>
+
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, minimal-ui, viewport-fit=cover">
+	<meta name="theme-color" content="#FF50A2">
+	<meta name="author" content="DexignZone">
+	<meta name="robots" content="index, follow"> 
+	<meta name="keywords" content="Tanzania, adults, social discovery, verified profiles, connections, chat, progressive web app, PWA, ConnectHub">
+	<meta name="description" content="ConnectHub — Meet. Connect. Discover. A mobile-first PWA prototype for verified adult connections in Tanzania.">
+	<meta property="og:title" content="ConnectHub — Meet. Connect. Discover.">
+	<meta property="og:description" content="ConnectHub — Meet. Connect. Discover. A mobile-first PWA prototype for verified adult connections in Tanzania.">
+	<meta property="og:image" content="https://datingkit.dexignzone.com/xhtml/social-image.png">
+	<meta name="format-detection" content="telephone=no">
+
+	<!-- Favicons Icon -->
+	<link rel="shortcut icon" type="image/x-icon" href="../assets/images/favicon.png">
+	
+    
+    <!-- Global CSS -->
+	<link href="../assets/vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="../assets/vendor/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.css">
+	<link rel="stylesheet" href="../assets/vendor/swiper/swiper-bundle.min.css">
+    
+	<!-- Stylesheets -->
+    <link rel="stylesheet" class="main-css" type="text/css" href="../assets/css/style.css">
+	
+    <!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,500;6..12,600;6..12,700;6..12,800;6..12,900;6..12,1000&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+	<link rel="manifest" href="../manifest.json">
+	<link rel="stylesheet" href="../assets/css/connecthub.css">
+</head>   
+<body class="bg-white header-large">
+<div class="page-wrapper">
+    
+	<!-- Preloader -->
+	<div id="preloader">
+		<div class="loader">
+			<div class="load-circle"><div></div><div></div></div>
+		</div>
+	</div>
+    <!-- Preloader end-->
+	
+	<!-- Header -->
+		<header class="header header-fixed bg-white">
+			<div class="container">
+				<div class="header-content">
+					<div class="left-content me-3">
+						<a href="javascript:void(0);" class="back-btn">
+							<i class="icon feather icon-chevron-left"></i>
+						</a>
+					</div>
+					<div class="mid-content d-flex align-items-center text-start">
+						<a href="javascript:void(0);" class="media media-40 rounded-circle me-3">
+							<img src="../assets/images/user/pic1.jpg" alt="/">
+						</a>
+						<div>
+							<h6 class="title">Neema, 25</h6>
+							<span>Online 24m ago</span>
+						</div>	
+					</div>
+					<div class="right-content d-flex align-items-center">
+						<a href="javascript:void(0);" class="dz-icon btn btn-primary light">
+							<i class="fa-solid fa-phone"></i>
+						</a>
+						<a href="javascript:void(0);" class="dz-icon me-0 btn btn-primary light">
+							<i class="fa-solid fa-video"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</header>
+	<!-- Header -->
+	
+	<!-- Page Content Start -->
+	<div class="page-content space-top p-b60 message-content">
+		<div class="container"> 
+			<div class="chat-box-area"> 
+				<div class="chat-content">
+					<div class="message-item">
+						<div class="bubble">Hi Amani, nice to connect with you.</div>    
+						<div class="message-time">08:35</div>    
+					</div>
+				</div>
+				<div class="chat-content user">
+					<div class="message-item">
+						<div class="bubble">Hi Neema, nice to meet you too!</div>    
+						<div class="message-time">08:40</div>    
+					</div>
+				</div>
+				<div class="chat-content">
+					<div class="message-item">
+						<div class="bubble">What kind of music are you into?</div>    
+						<div class="message-time">9:44 AM</div>    
+					</div>
+				</div>
+				<div class="chat-content user">
+					<div class="message-item">
+						<div class="bubble">Afrobeats and R&B mostly.</div>    
+						<div class="message-time">9.30 AM</div>    
+					</div>
+				</div>
+				<div class="chat-content">
+					<div class="message-item">
+						<div class="bubble">Nice — same here.</div>    
+						<div class="message-time">10:44 AM</div>    
+					</div>
+				</div>
+				<div class="chat-content user">
+					<div class="message-item">
+						<div class="bubble">What are you listening to lately?</div>    
+						<div class="message-time">10:44 AM</div>    
+					</div>
+				</div>
+			</div>
+		</div> 
+	</div>
+	<!-- Page Content End -->
+	<footer class="footer border-top fixed bg-white">
+        <div class="container p-2">
+            <div class="chat-footer">
+                <form>
+                    <div class="form-group">
+                        <div class="input-wrapper message-area">
+							<div class="append-media"></div>
+                            <input type="text" class="form-control" placeholder="Send message...">
+                            <a href="javascript:void(0);" class="btn-chat">
+                               <i class="icon feather icon-send"></i>
+                            </a>
+                        </div>
+                    </div>
+                </form>
+            </div>    
+        </div>
+    </footer>
+</div>  
+<!--**********************************
+    Scripts
+***********************************-->
+<script src="../assets/js/jquery.js"></script>
+<script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/vendor/swiper/swiper-bundle.min.js"></script><!-- Swiper -->
+<script src="../assets/vendor/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.js"></script><!-- Swiper -->
+<script src="../assets/js/dz.carousel.js"></script><!-- Swiper -->
+<script src="../assets/js/settings.js"></script>
+<script src="../assets/js/custom.js"></script>
+<script src="../assets/js/connecthub.js"></script>
+</body>
+</html>

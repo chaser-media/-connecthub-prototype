@@ -1,0 +1,57 @@
+// PRIMARY ====                                                                                            
+[data-theme-color="color-primary-1"]{
+    --primary		: #{$color1};
+	--secondary		: #441D3E;
+	--light         :#FFF1F7;
+	--rgba-primary-1: #{rgba($color1, 0.1)};
+	--rgba-primary-2: #{rgba($color1, 0.2)};
+	--rgba-primary-3: #{rgba($color1, 0.3)};
+	--rgba-primary-4: #{rgba($color1, 0.4)};
+	--rgba-primary-5: #{rgba($color1, 0.5)};
+	--rgba-primary-6: #{rgba($color1, 0.6)};
+	--rgba-primary-7: #{rgba($color1, 0.7)};
+	--rgba-primary-8: #{rgba($color1, 0.8)};
+	--rgba-primary-9: #{rgba($color1, 0.9)};
+	--theme-text-color: #fff;
+	--primary-gradient: linear-gradient(180deg, #FF864E 0%, #EA3D85 100%);
+	--primary-gradient1: linear-gradient(180deg, #FF72B4 0%, #FF3895 100%);
+
+}
+
+
+[data-theme-color="color-primary-2"]{
+    --primary		: #{$color2};
+	--secondary		: #441D3E;
+	--rgba-primary-1: #{rgba($color2, 0.1)};
+	--rgba-primary-2: #{rgba($color2, 0.2)};
+	--rgba-primary-3: #{rgba($color2, 0.3)};
+	--rgba-primary-4: #{rgba($color2, 0.4)};
+	--rgba-primary-5: #{rgba($color2, 0.5)};
+	--rgba-primary-6: #{rgba($color2, 0.6)};
+	--rgba-primary-7: #{rgba($color2, 0.7)};
+	--rgba-primary-8: #{rgba($color2, 0.8)};
+	--rgba-primary-9: #{rgba($color2, 0.9)};
+	--theme-text-color: #fff;
+	--primary-gradient: linear-gradient(180deg, #FF864E 0%, #EA3D85 100%);
+	--btn-gradient: linear-gradient(94deg, #E93E84 14.36%, #F46D8F 42.6%, #FE854E 80.39%);
+}
+
+[data-theme-color="color-primary-3"]{
+	--primary		: #{$color3};
+	--secondary		: #441D3E;
+	--rgba-primary-1: #{rgba($color3, 0.1)};
+	--rgba-primary-2: #{rgba($color3, 0.2)};
+	--rgba-primary-3: #{rgba($color3, 0.3)};
+	--rgba-primary-4: #{rgba($color3, 0.4)};
+	--rgba-primary-5: #{rgba($color3, 0.5)};
+	--rgba-primary-6: #{rgba($color3, 0.6)};
+	--rgba-primary-7: #{rgba($color3, 0.7)};
+	--rgba-primary-8: #{rgba($color3, 0.8)};
+	--rgba-primary-9: #{rgba($color3, 0.9)};
+	--theme-text-color: #fff;
+	--primary-gradient: linear-gradient(180deg, #450080 0%, #830CF3 100%);
+	--primary-gradient1: linear-gradient(180deg, #830CF3 0%, #450080 100%);
+	--btn-gradient: linear-gradient(90deg, #450080 2.48%, #830CF3 99.66%);
+}
+
+/* Language */

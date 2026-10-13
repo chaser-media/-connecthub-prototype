@@ -1,0 +1,310 @@
+.element-area{
+	.nav-tabs{
+		border-color: var(--border-color);
+		.nav-item{
+			.nav-link{
+				padding: 6px 6px;
+				font-size: 12px;
+			}
+			i{
+				transform:scale(1.2);
+				display:inline-block;
+				color:var(--primary);
+			}
+		}
+		@include respond('phone'){
+			justify-content: space-between;
+		}
+	}
+}
+
+.custom-tab-1{
+    .nav-link{
+        background: transparent;
+        border-radius: 0rem;
+		border-bottom:0.1875rem solid transparent;
+		border-width: 0 0rem 0.1875rem 0;
+		
+		&:focus,
+		&:hover,
+		&.active{
+			background-color: var(--bg-white);
+			border-color: var(--primary) ;
+			border-radius:0;
+			color: var(--primary);
+			border-width: 0 0rem 0.1875rem 0;
+		}
+    }
+	
+}
+.nav-pills{
+	&.light{
+		.nav-link.active, 
+		.show > .nav-link{
+			background:var(--rgba-primary-1);
+			color:var(--primary);
+			box-shadow:none;
+			@at-root [data-theme-version="dark"] & {
+				background:var(--rgba-primary-1);
+			}
+		}	
+	
+	}
+	.nav-link.active, 
+	.show > .nav-link{
+		background-color:var(--primary);
+	}
+	&.style-1{
+		align-items: center;
+		gap: 10px;
+		.nav-item{
+			line-height: 0;
+			.nav-link{
+				padding: 6px;
+				i{
+					font-size: 20px;
+					color: var(--secondary);
+					opacity: 0.7;
+				}
+			}
+		}
+		.nav-link.active, 
+		.show > .nav-link{
+			i{				
+				opacity: 1;
+			}
+		}
+	}
+}
+
+
+
+.default-tab{
+    .nav-tabs{
+        border-color: var(--border-color);
+        .nav-item{
+            .nav-link{
+                &.active{
+                    background-color: var(--bg-white);
+                    border-color: var(--border-color) var(--border-color) var(--bg-white);
+                }
+				&:focus-visible{
+					box-shadow: unset;
+				}
+            }
+        }
+    }
+	&.style-1{
+		.nav-tabs{
+			border: 0;
+			margin-bottom: 24px;
+			.nav-item{
+				padding: 0 10px 0 0;	
+				.nav-link{
+					border-width: 0 0 0 0; 
+					font-size: 16px;
+					font-weight: 600;
+					padding: 10px 11px;
+					color: var(--dark);
+					position: relative;
+					&.active{
+						background-color: var(--bg-white);
+						&:after{
+							background-color: var(--primary);							
+						}
+					}
+					&:after{
+						content: "";
+						position: absolute;
+						bottom: 0;
+						left: 0;
+						border-radius: 50px;
+						background-color: #E8EFF3;
+						width: 100%;
+						height: 4px;
+					}
+				}
+			}	
+		}
+	}
+	&.style-2{
+		.nav-tabs{
+			border-bottom: 1px solid var(--border-color);
+			margin-bottom: 0;
+			position: fixed;
+			top: 60px;
+			left: 0;
+			width: 100%;
+			z-index: 99;
+			background-color: var(--bg-white);
+			.nav-item{
+				padding: 0 10px 0 0;
+				text-align: center;
+				width: 50%;	
+				.nav-link{
+					border-width: 0 0 0 0; 
+					font-size: 16px;
+					font-weight: 700;
+					padding: 10px 11px;
+					color: var(--body-color);
+					position: relative;
+					&.active{
+						background-color: transparent;
+						color: var(--title);
+					}
+					&:after{
+						content: none;
+					}
+				}
+			}	
+		}
+	}	
+}
+
+
+.dz-tab{
+    .nav{
+        &.nav-tabs{
+            border:0;
+            .nav-item{-webkit-box-flex: 1;
+                -ms-flex-positive: 1;
+                flex-grow: 1;
+                justify-content: center;
+                display: flex;
+                .nav-link{
+                    background-color: transparent;
+                    color: #000;
+                    border: 0;
+                    font-size: 0.875rem;
+                    font-weight: 500;
+                    padding: 5px 0;
+                    width: 100%;
+                    border-radius: var(--border-radius);   
+                }
+            }
+        }
+    }
+    .tab-content{
+        border-radius: var(--border-radius);
+        padding: 15px;
+    }
+    .tab-slide-effect{
+        border: 1px solid var(--border-color); 
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.075) !important;
+        border-radius: var(--border-radius);
+        margin-bottom: 10px;
+        padding: 5px;
+        .nav-tabs{
+            padding: 0;
+            margin: 0;
+            position: relative;
+            z-index: 1;
+            box-shadow: none !important;
+            .nav-item.active .nav-link{
+                color: #fff !important;
+            }
+        }
+        .tab-active-indicator{
+            position: absolute;
+            height: 100%;
+            z-index: -1;
+            background-color: var(--primary) !important;
+            border-radius: var(--border-radius);
+            @include transitionMedium;
+        }
+    }
+	&.style-1{
+		.nav{
+			&.nav-tabs{
+				.nav-item{
+					.nav-link{
+						border: 0;
+						font-size: 0.875rem;
+						font-weight: 600;
+						padding: 12px 0;
+						width: 100%;
+						font-family: var(--font-family-title);
+						color: #A1A1A1;
+						border-radius: 0;
+						&:focus-visible{
+							box-shadow: unset;
+						}
+					}
+				}
+			}
+		}
+		.tab-content{
+			border-radius: 0;
+			padding: 15px;
+		}
+		.tab-slide-effect{
+			border: 0;
+			border-bottom: 1px solid var(--border-color);
+			background-color: var(--bg-white);
+			box-shadow: none!important;
+			border-radius: 0!important;
+			margin-bottom: 10px;
+			padding: 0;
+			.nav-tabs{
+				padding: 0;
+				margin: 0;
+				position: relative;
+				z-index: 1;
+				box-shadow: none !important;
+				.nav-item.active .nav-link{
+					color: var(--primary) !important;
+				}
+			}
+			.tab-active-indicator{
+				position: absolute;
+				height: 100%;
+				z-index: -1;
+				right: 0;
+				background-color: transparent!important;
+				&:after{
+					content: "";
+					position: absolute;
+					bottom: 0;
+					left: 0;
+					background-color: var(--primary);
+					width: 100%;
+					height: 2px;
+					border-radius: 0;
+				}
+			}
+		}
+	}
+	&.tab-fixed{
+		padding-top: var(--headheight);
+		.tab-slide-effect{
+			position: fixed;
+			top: var(--headheight);
+			left: 0;
+			width: 100%;
+			background-color: var(--bg-white);
+			z-index: 1;
+		}
+	}
+    &.tab-color{
+        .tab-slide-effect{
+            border-radius: 5rem;
+            border:0;
+            background-color: rgba(255, 255, 255, 0.125);
+            .tab-active-indicator{
+                background-color: rgba(255, 255, 255, 0.25) !important;
+                border-radius: 20rem;
+            }
+        }
+        .nav-tabs{
+            .nav-link{
+                background-color: transparent !important;
+                color: rgba(255, 255, 255, 0.5) !important;
+                width: 100%; 
+                @include transitionMedium;
+            }
+            .nav-item.active .nav-link{
+                color: #fff !important;
+            }
+        }
+    }
+}

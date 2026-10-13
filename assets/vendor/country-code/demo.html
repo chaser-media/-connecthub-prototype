@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>International Telephone Input</title>
+    <link rel="stylesheet" href="input-master/css/intlTelInput.css" />
+  </head>
+
+  <body>
+    <h1>International Telephone Input</h1>
+    <form>
+      <input id="phone" name="phone" type="tel" />
+      <button type="submit">Submit</button>
+    </form>
+
+    <script src="input-master/js/intlTelInput.js"></script>
+    <script>
+      var input = document.querySelector("#phone");
+      window.intlTelInput(input, {
+        utilsScript: "input-master/js/utils.js"
+      });
+    </script>
+  </body>
+</html>

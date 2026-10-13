@@ -1,0 +1,13 @@
+//In Outer ====
+@import "./home";
+@import "./message";
+@import "./login";
+@import "./welcome";
+@import "./splashcreen";
+@import "./profile";
+@import "./profile-details";
+@import "./tinder-swiper";
+
+//In Inner ====
+@import "./welcome/home.scss";
+@import "./welcome/media.scss";
