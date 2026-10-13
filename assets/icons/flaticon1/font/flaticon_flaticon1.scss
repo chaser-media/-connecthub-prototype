@@ -1,0 +1,45 @@
+$flaticon_flaticon1-font: "flaticon_flaticon1";
+
+@font-face {
+    font-family: $flaticon_flaticon1-font;
+    src: url("./flaticon_flaticon1.ttf?ca68c5aa57933921af049545a26df9d9") format("truetype"),
+url("./flaticon_flaticon1.woff?ca68c5aa57933921af049545a26df9d9") format("woff"),
+url("./flaticon_flaticon1.woff2?ca68c5aa57933921af049545a26df9d9") format("woff2"),
+url("./flaticon_flaticon1.eot?ca68c5aa57933921af049545a26df9d9#iefix") format("embedded-opentype"),
+url("./flaticon_flaticon1.svg?ca68c5aa57933921af049545a26df9d9#flaticon_flaticon1") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon_flaticon1 !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon_flaticon1-map: (
+    "pin": "\f101",
+    "like": "\f102",
+    "chat": "\f103",
+    "avatar": "\f104",
+    "poker-cards": "\f105",
+);
+
+.flaticon-pin:before {
+    content: map-get($flaticon_flaticon1-map, "pin");
+}
+.flaticon-like:before {
+    content: map-get($flaticon_flaticon1-map, "like");
+}
+.flaticon-chat:before {
+    content: map-get($flaticon_flaticon1-map, "chat");
+}
+.flaticon-avatar:before {
+    content: map-get($flaticon_flaticon1-map, "avatar");
+}
+.flaticon-poker-cards:before {
+    content: map-get($flaticon_flaticon1-map, "poker-cards");
+}

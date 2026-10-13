@@ -1,0 +1,35 @@
+@font-face {
+    font-family: "flaticon_flaticon1";
+    src: url("./flaticon_flaticon1.ttf?ca68c5aa57933921af049545a26df9d9") format("truetype"),
+url("./flaticon_flaticon1.woff?ca68c5aa57933921af049545a26df9d9") format("woff"),
+url("./flaticon_flaticon1.woff2?ca68c5aa57933921af049545a26df9d9") format("woff2"),
+url("./flaticon_flaticon1.eot?ca68c5aa57933921af049545a26df9d9#iefix") format("embedded-opentype"),
+url("./flaticon_flaticon1.svg?ca68c5aa57933921af049545a26df9d9#flaticon_flaticon1") format("svg");
+}
+
+i[class^="flaticon1-"]:before, i[class*=" flaticon1-"]:before {
+    font-family: flaticon_flaticon1 !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon1-pin:before {
+    content: "\f101";
+}
+.flaticon1-like:before {
+    content: "\f102";
+}
+.flaticon1-chat:before {
+    content: "\f103";
+}
+.flaticon1-avatar:before {
+    content: "\f104";
+}
+.flaticon1-poker-cards:before {
+    content: "\f105";
+}
